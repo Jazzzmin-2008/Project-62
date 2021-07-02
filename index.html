@@ -2,45 +2,57 @@
 
 <head>
     <title>Photo Gallary</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <h1>Photo Gallary</h1>
+    <h1> Photo Gallary </h1>
     <ul class="menu">
-        <li class="links"><a href="#gridview">Grid View</a></li>
-        <li class="links"><a href="#slideview">Slide View</a></li>
+        <li class="links">
+            <a href="#gridview">Grid View</a>
+        </li>
+        <li class="links">
+            <a href="#slideview">Slide View</a>
+        </li>
     </ul>
     <section id="gridview">
-        <h2>Grid View</h2>
-        <div class="row"> 
-        <img id="img" src="https://images.unsplash.com/photo-1620359819119-4dc25ef87d0b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgyMDE0Nw&ixlib=rb-1.2.1&q=85" />
-        <img id="img" src="https://images.unsplash.com/photo-1618252018907-e4049766e810?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgxNjg0NA&ixlib=rb-1.2.1&q=85" />
-        <img id="img" src="https://images.unsplash.com/photo-1620753433553-b68f28293564?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgxNjkyNw&ixlib=rb-1.2.1&q=85" />
-        <img id="img" src="https://images.unsplash.com/photo-1620651225164-1d501d121c71?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgxNzAwMg&ixlib=rb-1.2.1&q=85" />
-        <img id="img" src="https://images.unsplash.com/photo-1620622984699-99901fe3786a?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgxNzA4OQ&ixlib=rb-1.2.1&q=85" />
-        <img id="img" src="https://images.unsplash.com/photo-1620588280177-d2a49fa41ebe?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgxNzE0NA&ixlib=rb-1.2.1&q=85" />
-        <img id="img" src="https://images.unsplash.com/photo-1620108365572-da7427cbc809?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgxNzIwNA&ixlib=rb-1.2.1&q=85" />
-        <img id="img" src="https://images.unsplash.com/photo-1620196244708-5eff734d45cd?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgxNzI3Mg&ixlib=rb-1.2.1&q=85" />
-        <img id="img" src="https://images.unsplash.com/photo-1620766440624-fc5c3222a76f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgxNzM2MA&ixlib=rb-1.2.1&q=85" />
-        <img id="img" src="https://images.unsplash.com/photo-1620375338246-6cb9413672e7?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgxNzY2Mw&ixlib=rb-1.2.1&q=85" />
-            </div>
-    </section>
-    <section id="slideview"> 
-        <h2>Slide View</h2>
-    <div id="bs1" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="item">
-                        <img src="https://images.unsplash.com/photo-1620554918912-af059320573b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgyMDcwNQ&ixlib=rb-1.2.1&q=85"> 
-                        </div>
-                <div class="item">
-                            <img src="https://images.unsplash.com/photo-1620555044184-4cab66ffe238?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgyMDcwNQ&ixlib=rb-1.2.1&q=85">
-                    </div>
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a> <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
-
+        <h2> Grid View </h2>
+        <div class="row">
+            <img id="img" src="https://images.unsplash.com/photo-1620359819119-4dc25ef87d0b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgyMDE0Nw&ixlib=rb-1.2.1&q=85" />
+            <img id="img" src="https://images.unsplash.com/photo-1618252018907-e4049766e810?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgxNjg0NA&ixlib=rb-1.2.1&q=85" />
+            <img id="img" src="https://images.unsplash.com/photo-1620753433553-b68f28293564?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgxNjkyNw&ixlib=rb-1.2.1&q=85" />
+            <img id="img" src="https://images.unsplash.com/photo-1620651225164-1d501d121c71?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgxNzAwMg&ixlib=rb-1.2.1&q=85" />
+            <img id="img" src="https://images.unsplash.com/photo-1620622984699-99901fe3786a?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgxNzA4OQ&ixlib=rb-1.2.1&q=85" />
+            <img id="img" src="https://images.unsplash.com/photo-1620588280177-d2a49fa41ebe?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgxNzE0NA&ixlib=rb-1.2.1&q=85" />
+            <img id="img" src="https://images.unsplash.com/photo-1620108365572-da7427cbc809?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgxNzIwNA&ixlib=rb-1.2.1&q=85" />
+            <img id="img" src="https://images.unsplash.com/photo-1620196244708-5eff734d45cd?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgxNzI3Mg&ixlib=rb-1.2.1&q=85" />
+            <img id="img" src="https://images.unsplash.com/photo-1620766440624-fc5c3222a76f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgxNzM2MA&ixlib=rb-1.2.1&q=85" />
+            <img id="img" src="https://images.unsplash.com/photo-1620375338246-6cb9413672e7?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgxNzY2Mw&ixlib=rb-1.2.1&q=85" />
+        </div>
+        </section>
+    <section id="slideview">
+    <h2> Slide View </h2>
+    <div id="bs1" class="carousel slide" data - ride="carousel">
+    <div class="carousel-inner">
+    <div class="item">
+        <img src="https://images.unsplash.com/photo-1620554918912-af059320573b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgyMDcwNQ&ixlib=rb-1.2.1&q=85">
                 </div>
-         </div>
-            
+        <div class="item">
+         <img src="https://images.unsplash.com/photo-1620555044184-4cab66ffe238?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMDgyMDcwNQ&ixlib=rb-1.2.1&q=85">
+                 </div>
+         <a class="left carousel-control" href="#myCarousel" data - slide="prev">
+             <span class="glyphicon glyphicon-hand-left">
+                 </span> </a>
+            </div>
+                 <a class="right carousel-control" href="#myCarousel" data - slide="next">
+          <span class="glyphicon glyphicon-hand-right">
+              </span> </a>
+  </div>
+
     </section>
-    </body>
+    </ body>
 </html>
